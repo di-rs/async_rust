@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["crates/*"]
+members = ["1_base/connection", "1_base/server", "2_condvar", "crates/*"]
 
 [workspace.package]
 authors = ["Dima P <dimapm@pm.me>"]

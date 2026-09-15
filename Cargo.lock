@@ -295,6 +295,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "condvar"
+version = "0.1.0"
+
+[[package]]
+name = "connection_bin"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "tokio",
+]
+
+[[package]]
 name = "console-api"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1654,14 +1666,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sandbox"
-version = "0.1.0"
-dependencies = [
- "reqwest",
- "tokio",
-]
-
-[[package]]
 name = "schannel"
 version = "0.1.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1746,6 +1750,14 @@ dependencies = [
  "serde",
  "serde_core",
  "zmij",
+]
+
+[[package]]
+name = "server_bin"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "tokio",
 ]
 
 [[package]]
