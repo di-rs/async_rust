@@ -1,5 +1,5 @@
 [package]
-name = "server_bin"
+name = "io"
 version = "0.1.0"
 authors.workspace = true
 edition.workspace = true
@@ -9,7 +9,6 @@ readme.workspace = true
 include.workspace = true
 
 [dependencies]
-reqwest = "0.13.5"
 tokio = { version ="1.53.1", features = ["full"] }
 
 [lints]

@@ -1,6 +1,7 @@
 [workspace]
 resolver = "3"
-members = ["1_base/connection", "1_base/server", "2_condvar", "crates/*"]
+members = ["crates/*", "learn/*", "learn/01_base/connection", "learn/01_base/server"]
+exclude = ["learn/01_base"]
 
 [workspace.package]
 authors = ["Dima P <dimapm@pm.me>"]

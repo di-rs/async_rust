@@ -40,7 +40,7 @@ fn main() {
     let mini_tokio = MiniTokio::new();
 
     mini_tokio.spawn(async {
-        let when = Instant::now().add(Duration::from_millis(1000));
+        let when = Instant::now().add(Duration::from_secs(1));
         let future = Delay { when };
 
         let out = future.await;

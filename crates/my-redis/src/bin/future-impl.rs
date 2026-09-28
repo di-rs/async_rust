@@ -61,7 +61,7 @@ impl tokio_stream::Stream for Interval {
 
 #[tokio::main]
 async fn main() {
-    let when = Instant::now().add(Duration::from_millis(1000));
+    let when = Instant::now().add(Duration::from_secs(1));
     let future = Delay { when };
 
     let out = future.await;
@@ -87,7 +87,7 @@ impl Future for MainFuture {
         loop {
             match *self {
                 State0 => {
-                    let when = Instant::now().add(Duration::from_millis(1000));
+                    let when = Instant::now().add(Duration::from_secs(1));
                     let future = Delay { when };
                     *self = State1(future);
                 }

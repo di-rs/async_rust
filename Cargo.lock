@@ -939,6 +939,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "io"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "ipnet"
 version = "2.12.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1181,6 +1188,16 @@ dependencies = [
  "tokio-stream",
  "tracing",
  "tracing-subscriber 0.3.23",
+]
+
+[[package]]
+name = "network"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tokio",
 ]
 
 [[package]]
@@ -1534,6 +1551,8 @@ dependencies = [
  "rustls",
  "rustls-pki-types",
  "rustls-platform-verifier",
+ "serde",
+ "serde_json",
  "sync_wrapper",
  "tokio",
  "tokio-rustls",
@@ -1756,7 +1775,6 @@ dependencies = [
 name = "server_bin"
 version = "0.1.0"
 dependencies = [
- "reqwest",
  "tokio",
 ]
 
